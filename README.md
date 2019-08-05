@@ -8,6 +8,7 @@ The hashCode contract
 Objects that are equal must have the same hash code within a running process.
 Whenever you implement equals, you MUST also implement hashCode!
 Common faults:
+
 Unequal objects must have different hash codes – WRONG
 
 Objects with the same hash code must be equal – WRONG
