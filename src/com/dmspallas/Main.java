@@ -99,5 +99,14 @@ public class Main {
             System.out.println(planet);
 //            System.out.println(planet.getKey() + ": " + planet.getOrbitalPeriod());
         }
+
+        solarSystem.put(pluto.getKey(), pluto);
+        System.out.println("\n"+solarSystem.get(HeavenlyBody.makeKey("Pluto", HeavenlyBody.BodyTypes.PLANET)));
+        System.out.println("\n"+solarSystem.get(HeavenlyBody.makeKey("Pluto", HeavenlyBody.BodyTypes.DWARF_PLANET)));
+        System.out.println();
+        System.out.println("The solar system contains");
+        for(HeavenlyBody heavenlyBody1 : solarSystem.values()){
+            System.out.println(heavenlyBody1);
+        }
     }
 }
